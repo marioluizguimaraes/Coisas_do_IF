@@ -1,0 +1,16 @@
+body{
+    height: 100vh;
+    font-size           : 25px;
+    color               : white;
+    font-family         : Arial, Helvetica, sans-serif;
+    background-image    : linear-gradient( -45deg, #32B312, #7eca6b );
+}
+header h1{
+    text-align: center;
+}
+article p{
+    text-align: justify;
+}
+footer p{
+    text-align: right;
+}

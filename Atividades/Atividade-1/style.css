@@ -1,0 +1,40 @@
+
+*{
+    margin: 0px;
+}
+body{
+    background-color: rgb(22, 42, 65);
+    color           : aliceblue;
+    font-family     : Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    font-size       : 30px;   
+    padding         : 40px;
+    background-color: darkcyan;
+    margin          : 0px;
+    box-sizing      : 0px 0px 10px black;
+}
+dl{
+    padding: 15px 60px;
+    margin              : 0px auto  20px auto;
+    width               : 700px;
+    background-color    : rgba(46, 70, 99, 0.795);
+    border-radius       : 0px 0px  20px 20px ;
+    box-shadow          : 0px 3px 10px rgba(0, 0, 0, 0.438);
+}
+dt{
+    color       : rgb(255, 138, 96);
+    text-align  : center;
+    margin      : 30px
+}
+dd{
+    margin-left : auto;
+}
+p{
+    font-size   : 20px;
+    margin      : auto;
+    text-align  : justify;
+    width       : 700px;
+}

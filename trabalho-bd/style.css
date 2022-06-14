@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+*{
+    margin      : 0px;
+    padding     : 0px;
+    font-family : Arial, Helvetica, sans-serif;
+}
+:root{
+    --branco : rgb(255, 255, 255);
+    --azul   : dodgerblue;
+    --tranparente: rgba(255, 255, 255, 0.021);
+}
+body{
+    background-color: rgb(17, 12, 22);
+    
+}
+/*---------Cabeçalho---------*/
+#header{
+ 
+    text-align  : center;
+    padding     : 30px;   
+}
+#titulo{
+    color   : dodgerblue;
+    margin  : 20px 0px 70px 0px;
+}
+
+/*---------Navegação---------*/
+#nav ul{
+    list-style-type : none;
+    display         : flex; 
+    justify-content : space-between;
+}
+#nav ul li a{
+    text-decoration : none;
+    color           : rgb(255, 255, 255);
+    padding         : 10px;
+    border          : 2px solid dodgerblue;
+    border-radius   : 20px;
+    box-shadow      : 0px 0px 5px rgba(0, 0, 0, 0.322);
+}
+/*-------Fim-Navegação------- */
+
+/*-------Fim-Cabeçalho------- */
+
+/*----------Conteudo----------*/
+
+.div{
+    display     : flex;
+    flex-wrap   : wrap;
+}
+.carta{
+    width               : 230px;
+    height              : 430px;
+    padding             : 20px;
+    margin              : 20px; 
+    display             : flex;
+    flex-wrap           : wrap;
+    align-items         : center;
+    justify-content     : center;
+    border              : 2px solid var(--branco);
+    background-color    : var(--tranparente);
+    border-radius       : 20px;
+    transition          : all 1s;
+}
+
+.frente h2{
+    color       : var(--branco);
+    text-align  : center;
+}
+.verso h2{
+    color       : var(--azul);
+}
+.verso,.frente{
+    transition          : all 2s;
+}
+.verso h2{
+    margin-bottom: 20px;
+}
+.verso{
+    display: none;
+    text-align: justify;
+}
+
+.linha{
+    
+    width   : 95%;
+    height  : 2px;
+    margin  : 20px auto 20px auto;
+    background-color: dodgerblue;
+    box-shadow      : 0px 0px 7px white;
+}
+
+/*----------Efeitos----------*/
+.carta:hover .frente{
+    display: none;
+    
+}
+.carta:hover .verso{
+    display     : block;
+    transform   : rotateY(180deg);
+}
+.carta:hover .verso h2{
+    text-align  : left;
+
+}
+.carta:hover{
+    transform       : rotateY(180deg);
+    background-color: var(--branco);
+    border          : 2px solid var(--azul);
+    box-shadow      : 0px 0px 7px rgba(255, 255, 255, 0.534);
+}
+
+/*--------Fim-Efeitos----------*/
+
+/*-----------Roda-pé-----------*/
+footer{
+    height: 100px;
+}
+footer p{
+
+    text-align: center;
+    color: aliceblue;
+}
+footer p a{
+
+   text-decoration: none;
+   color: dodgerblue;
+}
+/*--------Fim-Roda-pé----------*/
+
+/*-------Responsividade--------*/
+@media(max-width :650px){
+    ul{
+        flex-direction    : column;
+    }
+    li{
+        margin-bottom: 50px;
+    }
+    .div{
+        display: block;  
+    }
+    .carta{
+        margin: 20px auto 20px auto;
+    }
+}
+/*-----Fim-Responsividade-----*/
+
+/*--------Fim-Conteudo--------*/
+
+
+
+
+
+
+
